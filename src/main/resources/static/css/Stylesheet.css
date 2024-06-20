@@ -1,0 +1,708 @@
+body {
+  background-color: #131313;
+}
+
+h3 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+
+h1, h2, h3, h4, h5, p{
+  color: white;
+}
+
+
+/* Carousel */
+.tawaran h2{
+  margin-bottom: 25px;
+}
+
+.carousel {
+    width: auto;
+    height: auto;
+
+}
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouseltitle{
+    text-align: center;
+    font-size: x-large;
+}
+
+.backg {
+    margin-top: 90px;
+    width: 100%;
+}
+
+.container {
+    white-space: wrap;
+    width: 100%;
+    margin-top: 100px;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container img {
+    display: inline-block;
+    padding: 5px;
+    height: 300px;
+    width: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container img {
+    height: 200px;
+    width: 150px;
+    }
+  }
+
+    
+  /* game */
+  .game-list {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* Mengatur jumlah kolom dalam grid */
+    grid-gap: 20px; /* Mengatur jarak antara elemen-elemen dalam grid */
+    width: 100%; /* Mengatur lebar gambar */
+    height: 100%; /* Mengatur tinggi gambar */
+    margin-top: 80px;
+  }
+  .game-item {
+    text-align: center;
+  }
+  .game-item img {
+    width: 100%; /* Mengatur lebar gambar */
+    height: 100%; /* Mengatur tinggi gambar */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .game-item h3 {
+    margin-top: 10px; /* Mengatur jarak antara judul dan gambar */
+  }
+
+  #bestgame {
+    padding: 5px;
+  }
+
+
+  /* card */
+  .card{
+    border: none;
+    background-color: #3a3a3a;
+  }
+
+  .card-title{
+    color: white;
+  }
+  
+
+  /* sidebar */
+  .sidebar {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .sidebar a {
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #dadada;
+  }
+  
+  .sidebar a.active {
+    background-color: #969696;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  /* Responsive Sidebar */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding-top: 50px;
+    height: auto;
+    position: relative;
+    border-radius: 0;
+  }
+
+  .sidebar a {
+    padding: 10px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+
+  /* Navbar */
+  .navbar-brand img{
+    width: 100px;
+    height: 50px;
+  }
+  .navbar .bg-dark .navbar-expand-lg .bg-body-tertiary .sticky-sm-top {
+    background-color: #3a3a3a;
+  }
+
+/* Search */
+.search-form {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.search-input {
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: #3a3a3a;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.search-button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  background-color: #131313;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #a30101;
+}
+
+.user-icon {
+  color: #9b9b9b;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+/* poster *//* Deskripsi */
+.poster {
+  margin: 10px auto;
+  padding: 12px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.thumbnails-container {
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -10px;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#tag {
+  width: 15rem;
+}
+
+.deskripsi {
+  display: flex;
+}
+
+.deskripsi h2{
+  margin: 0px;
+}
+
+.left {
+  flex: 70%;
+}
+
+.left p,
+h2,
+h4 {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.right {
+  flex: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .deskripsi {
+    flex-direction: column;
+  }
+
+  .left p,
+  h2,
+  h4 {
+    width: 100%;
+  }
+
+  .right {
+    flex: 100%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .deskripsi {
+      flex-direction: column;
+    }
+  
+    .left p,
+    h2,
+    h4 {
+      width: 100%;
+    }
+  
+    .right {
+      flex: 100%;
+      text-align: center;
+    }
+  
+    #tag {
+      width:100%;
+    }
+  }
+}
+
+
+/* card */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.text-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+.left-text, .right-text {
+  flex-basis: 50%;
+  margin: 40px;
+}
+
+.genre{
+  margin-top: 30px;
+}
+
+
+/* Profile */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-picture h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.statistics-container {
+  margin-top: 20px;
+}
+
+.statistics-table {
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.statistics-table th {
+  border-right: 3px solid #3a3a3a;
+  border-left: 3px solid #3a3a3a;
+  padding: 10px;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Xpass */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info img {
+  width: 600px;
+  height: 320px;
+}
+
+.info h2 {
+  width: 500px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.info p{
+  text-align: center;
+}
+
+/* .tombol:hover {
+  background-color: #8d0000;
+} */
+
+.tombol {
+  display: inline-block;  
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #cc0000;
+  background-color: #131313;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.offers-container {
+  margin-top: 50px;
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Untuk menghilangkan tampilan default scroll bar (hanya berlaku di beberapa browser) */
+  -ms-overflow-style: none; /* Untuk menghilangkan tampilan default scroll bar di IE/Edge (hanya berlaku di IE/Edge) */
+}
+
+.offers {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -10px;
+}
+
+.offer {
+  width: 250px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 10px;
+  }
+
+.radio-group{
+  margin-top: 50px;
+  }
+
+.radio-group label {
+  display: block;
+  color: white;
+  font-size: x-large;
+  margin-top: -90px;
+  }
+
+  .radio-group button label {
+    text-align: left;
+  }
+
+  .radio-group input[type="radio"] {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  }
+
+  .radio-group .description {
+  font-size: medium;
+  width: 10px;
+  color: #909090;
+  }
+
+  .radio-group .card{
+    background-color: #1e1e1e; 
+    border: 2px solid red; border-radius: 10px;
+    width: 800px;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .tombolbuy{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 2px solid #cc0000;
+    background-color: #131313;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 576px) {
+    .info img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info h2 {
+      width: 90%;
+      font-size: 20px;
+      margin-top: -30px;
+    }
+
+    .offers-container {
+      margin-top: 30px;
+    }
+
+    .offer {
+      width: 150px;
+      height: 80px;
+    }
+
+    .radio-group {
+      margin-top: 30px;
+    }
+
+    .radio-group .card {
+      width: 100%;
+      height: 250px;
+    }
+
+    .tombolbuy {
+      margin-top: 30px;
+    }
+  }
+
+  /* Login & Register*/
+  #masuk {
+    width: 60rem; 
+    background-color: #1c1c1c;
+  }
+
+  #icon{
+    height: 250px; 
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .form-control[type="input"],
+  .form-control[type="email"],
+  .form-control[type="password"] {
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+    width: 500px;
+  }
+
+  .form-control[type="input"]::placeholder,
+  .form-control[type="email"]::placeholder,
+  .form-control[type="password"]::placeholder {
+    color: white;
+  }
+
+  .isiMasuk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text {
+    color: #ffffff;
+  }
+    
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    #masuk {
+      width: 45rem;
+    }
+
+    .form-control[type="input"],
+    .form-control[type="email"],
+    .form-control[type="password"] {
+      width: 400px;
+    }
+
+    #icon{
+      width: 400px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    #masuk {
+      width: 25rem;
+    }
+
+    .form-control[type="input"],
+    .form-control[type="email"],
+    .form-control[type="password"] {
+      width: 350px;
+    }
+
+    #icon{
+      width: 350px;
+      height: 200px;
+    }
+
+  }
+
+
+  /* Payment Method */
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  .links .garis-horizontal {
+    border-bottom: 3px solid red;
+  }
+
+  .garis-horizontal {
+    border-bottom: 1.5px solid rgb(142, 142, 142);
+  }
+
+  .gambar {
+    float: left;
+    margin-right: 40px;
+  }
+
+  .sponsor {
+    overflow: auto;
+  }
+
+  .teks {
+    overflow: hidden;
+    font-size: large;
+    width: 65%;
+  }
+
+  #bayar {
+  width: 70rem;
+  height: 35rem;
+  background-color: #1c1c1c;
+  padding: auto;
+  }
+
+  #norek{
+    margin-top: 60px;
+  } 
+
+  #submitpayment {
+    margin-top: 30px;
+  }
+
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .teks {
+      width: 40%;
+    }
+
+    #norek {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    #bayar{
+      width: 45rem;
+      height: 25rem;
+    }
+
+    .gambar{
+      width: 140px;
+      height: 140px;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .garis-horizontal {
+      width: 100%;
+    }
+  
+    #bayar{
+      width: 25rem;
+      height: 25rem;
+      }
+
+    #norek{
+      margin-top: 10px;
+    }
+    #submitpayment {
+      margin-top: 20px;
+    }
+  }
