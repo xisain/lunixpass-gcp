@@ -16,3 +16,4 @@ serviceAccountKey.json
 firebase-tools-instant-win.exe
 firestore.indexes.json
 firestore.rules
+src/main/resources/key/application_default_credentials.json
